@@ -17,6 +17,7 @@ public class AppConfig {
 
     @Bean
     public MemberService memberService(){
+
         return new MemberServiceImpl(memberRepository());
     }
 
@@ -28,6 +29,7 @@ public class AppConfig {
 
     @Bean
     public OrderService orderService(){
+
         return new OrderServiceImpl(memberRepository(), discountPlicy());
     }
 
